@@ -1,0 +1,42 @@
+.data{
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+}
+
+.data:before {
+
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('../../assets/data-bg.png') no-repeat center center/contain;
+
+}
+
+.data .container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    top: 30%;
+    left: 45%;
+    position: absolute;
+}
+
+@media screen and ( max-width: 940px) {
+
+    .data .container{
+
+        left: 0;
+        padding: 1rem;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        
+    }
+
+}
